@@ -1,4 +1,4 @@
 DeviceImageLoadEvents
 | where InitiatingProcessFileName contains "OneDrive.exe" or InitiatingProcessFileName contains "OneDriveStandaloneUpdater.exe"
-| where FileName contains "secure32.dll"
+| where FileName contains "secur32.dll"
 | where FolderPath contains @'\AppData\Local\Microsoft\OneDrive'
